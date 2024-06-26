@@ -1,0 +1,57 @@
+// Importamos Bootstrap si lo estamos usando
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// Estilos personalizados para el menú
+.navbar {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.nav-logo img{
+    display: flex;
+    align-items:flex-end;
+    padding-left: 50px;
+    margin-top: 10px;
+    gap: 10px;
+    width: 10%;
+    height: 10%;
+}
+
+
+.nav-menu {
+    display: flex;
+    justify-content: center; /* Centra los elementos del menú */
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    gap: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%; /* Asegura que el ul ocupe el 100% del contenedor */
+}
+
+.nav-menu li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-menu li :hover {
+    color: yellow; /* Efecto de hover para enlaces */
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    margin-top: -50px;
+    color: inherit;
+    padding: 8px 16px; /* Espacio alrededor de los enlaces para mayor clicabilidad */
+    transition: background-color 0.3s ease;
+}
+
+

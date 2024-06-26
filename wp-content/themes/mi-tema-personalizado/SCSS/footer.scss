@@ -1,0 +1,21 @@
+// Importamos Bootstrap si lo estamos usando
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// Estilos personalizados para el footer
+#colophon {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+
+    p {
+        margin: 0;
+        font-size: 14px;
+
+        // Estilo para el texto del copyright
+        &::before {
+            content: "\00A9 ";
+        }
+    }
+}

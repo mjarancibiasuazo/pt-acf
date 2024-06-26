@@ -1,0 +1,67 @@
+// Importamos Bootstrap si lo estamos usando
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// Estilos personalizados para la página principal (index.php)
+.homepage-content {
+    background-color: #ffeb3b; /* Fondo amarillo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+
+    .text-container {
+        h1, h2 {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        h1 {
+            animation-delay: 0.5s;
+        }
+
+        h2 {
+            animation-delay: 1s;
+        }
+    }
+
+    @keyframes slideIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.8;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+        background-color: #e91e63; /* Rosa */
+        top: 40%;
+        left: 10%;
+    }
+
+    .square {
+        width: 100px;
+        height: 100px;
+        background-color: #3f51b5; /* Azul */
+        top: 40%;
+        left: 80%;
+    }
+
+    .triangle {
+        width: 180px;
+        height: 180px;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid #4caf50; /* Verde */
+        top: 90%;
+        left: -80%;
+    }
+}
